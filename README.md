@@ -1,29 +1,26 @@
 # My-Insta
-This is a simple personal gallery application that displays my photos for others to see
+This is a Django personal gallery application that displays my photos for others to see.
 
 
 ## Project Run-Through
 * A few details about this project:
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/kelvinmburu/my-blogr)
-![Lines of Code](https://img.shields.io/tokei/lines/github/kelvinmburu/my-blogr)
-![GitHub License](https://img.shields.io/github/license/kelvinmburu/my-blogr)
-![GitHub Top Language](https://img.shields.io/github/languages/top/kelvinmburu/my-blogr)
-![GitHub Language Count](https://img.shields.io/github/languages/count/kelvinmburu/my-blogr)
-![GitHub Commit Activity](https://img.shields.io/github/commit-activity/w/kelvinmburu/my-blogr)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/kelvinmburu/my-insta)
+![Lines of Code](https://img.shields.io/tokei/lines/github/kelvinmburu/my-insta)
+![GitHub License](https://img.shields.io/github/license/kelvinmburu/my-insta)
+![GitHub Top Language](https://img.shields.io/github/languages/top/kelvinmburu/my-insta)
+![GitHub Language Count](https://img.shields.io/github/languages/count/kelvinmburu/my-insta)
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/w/kelvinmburu/my-insta)
 
 ## Contribution
 - [Kelvin Mburu](https://github.com/kelvinmburu) 📖
 
 ## Technology Used
 
-1. Python3
-2. Flask version 2
+1. Python 3.8
+2. [Django version 4](https://docs.djangoproject.com/en/4.0/)
 3. HTML, CSS and JavaScript
-4. Flask Login, email validator, and password validator
-5. C
-6. Shell
-
+4. Pip
 ## Project Requirements & Prerequisites
 
 1. IDE of Choice
@@ -31,17 +28,16 @@ This is a simple personal gallery application that displays my photos for others
 3. Browser
 
 * Please ensure you're working from a Windows/MacOS/Linux
-* Install Flask through `pip install flask`
+* Install Django through `pip install django`
 
 ## Project Setup and Installation
 
-1. Proceed to this [link](https://github.com/kelvinmburu/my-blogr.git) and clone the repository.
+1. Proceed to this [link](https://github.com/kelvinmburu/my-insta.git) and clone the repository.
 2. Extract the folder and `cd` to the folder on your terminal or your prefered IDE
-3. In the terminal, create a virtual/flask environment: `python3 -m venv virtual` and activate it through `source virtual/bin/activate`. In the case of flask, please use `source flask/bin/activate` or refer to this [documentation](https://stackoverflow.com/questions/31252791/flask-importerror-no-module-named-flask) for Flask virtual environment installation.
-4. Install all dependencies from the `requirements.txt` file; use `pip` to install needed dependencies.
-5. In the project folder, create a `start.sh` file which acts as a server at runtime.
-6. In the terminal, and within the project folder, run `chmod +x start.sh` and `./start.sh` to start the project.
-7. View the application on your browser on `http://127.0.0.1:5000`. If you have another project running on another port, use `flask run --host 0.0.0.0 --port 5001` to switch to a new port; You can use a different port number.
+3. In the terminal, create a virtual environment: `python3 -m venv virtual` and activate it through `source virtual/bin/activate`. In the case of any name, please use `source <name>/bin/activate` or refer to this [documentation](https://stackoverflow.com/questions/31252791/flask-importerror-no-module-named-flask) for Flask virtual environment installation.
+4. Install all dependencies from the `requirements.txt` file; use `pip install -r requirements.txt` to install needed dependencies.
+6. In the terminal, and within the project folder, run `python manage.py runserver` to start the project.
+7. View the application on your browser on `http://127.0.0.1:8000`. If you have another project running on another port, use `venv run --host 0.0.0.0 --port 8001` to switch to a new port; You can use a different port number.
 
 ## Behavior Driven Development (BDD)
 
@@ -55,7 +51,7 @@ At a minimum, this is what the user should experience in the application:
 To contribute to this project, please follow the following steps:
 * Fork this repository.
 * Create a branch: `git checkout -b <branch_name>`.
-* Make your changes and commit them: `git commit -m '<commit_message>'`
+* Make your changes and commit them: `git add .` && `git commit -m '<commit_message>'` && `git push origin <branch_name>`
 * Push to the original branch: `git push origin <flask-news>/<main>`
 * Create the pull request.
 * Once a PR is reviewed, the changes will be pushed to the main branch for integration.
