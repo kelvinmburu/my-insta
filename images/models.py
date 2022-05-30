@@ -13,6 +13,7 @@ class Category(models.Model):
     uniqueId = models.CharField(null=True, blank=True, max_length=100)
     slug = models.SlugField(max_length=500, unique=True, blank=True, null=True)
     date_created = models.DateTimeField(blank=True, null=True)
+    location = models.TextField(null=True, blank=True)
     last_updated = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
@@ -52,6 +53,7 @@ class Image(models.Model):
     uniqueId = models.CharField(null=True, blank=True, max_length=100)
     slug = models.SlugField(max_length=500, unique=True, blank=True, null=True)
     date_created = models.DateTimeField(blank=True, null=True)
+    location = models.TextField(null=True, blank=True)
     last_updated = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
