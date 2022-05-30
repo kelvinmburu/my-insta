@@ -34,4 +34,4 @@ def image_detail_page(request, slug1, slug2):
     context['category'] = category
     context['image'] = image
     
-    return render(request, '', context)
+    return render(request, 'main/image.html', context)
