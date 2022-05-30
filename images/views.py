@@ -13,7 +13,7 @@ def home(request):
 def category_page(request, slug):
     
     category = Category.objects.get(slug=slug)
-    images = Image.objects.filter(category=category).order_by('date_created')
+    images = Image.objects.filter(category=category).order_by('date_created')[:6]
     
     for x in images:
         x.short_description = x.description[:130]
@@ -23,3 +23,15 @@ def category_page(request, slug):
     context['category'] = category
         
     return render(request, 'main/category.html', context)
+
+
+def image_detail_page(request, slug1, slug2):
+    
+    category = Category.objects.get(slug=slug1)
+    image = Image.objects.get(slug=slug2)
+    
+    context = {}
+    context['category'] = category
+    context['image'] = image
+    
+    return render(request, '', context)
