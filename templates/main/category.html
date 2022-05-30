@@ -146,7 +146,7 @@
                                         <a href="{% url 'image_detail' slug1=category.slug slug2=image.slug %}"><button
                                                 type="button" class="btn btn-sm btn-outline-primary">View</button></a>
                                     </div>
-                                    <small class="text-muted"> {{image.date_created|date}} </small>
+                                    <small class="text-muted"> {{image.date_created|date}}, {{image.location}} </small>
                                 </div>
                             </div>
                         </div>
