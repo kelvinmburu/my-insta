@@ -1,6 +1,7 @@
 # My-Insta
 This is a Django personal gallery application that displays my photos for others to see.
 
+![Site Screenshot](static/assets/My-Insta.png)
 
 ## Project Run-Through
 * A few details about this project:
